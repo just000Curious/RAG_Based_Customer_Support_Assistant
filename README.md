@@ -1,6 +1,6 @@
 # RAG-Based Customer Support Assistant
 
-This project is a powerful, local Retrieval-Augmented Generation (RAG) chatbot built to handle customer support inquiries. It uses Google Gemini, LangGraph, and ChromaDB to ingest custom PDF knowledge bases and answer user queries, seamlessly escalating complex issues to a human agent when needed.
+This project is a powerful, local Retrieval-Augmented Generation (RAG) chatbot built to handle customer support inquiries. It uses Groq, LangGraph, and ChromaDB to ingest custom PDF knowledge bases and answer user queries, seamlessly escalating complex issues to a human agent when needed.
 
 ## Features
 - **Dynamic PDF Uploads**: Directly upload your support PDFs through the UI.
@@ -30,13 +30,13 @@ This project is a powerful, local Retrieval-Augmented Generation (RAG) chatbot b
 3. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
-   pip install langchain-google-genai langchain_text_splitters
+   pip install langchain-groq langchain_text_splitters
    ```
 
 4. **Environment Variables**:
-   Create a `.env` file in the root directory and add your Google Gemini API Key:
+   Create a `.env` file in the root directory and add your Groq API Key:
    ```env
-   GOOGLE_API_KEY=your_gemini_api_key_here
+   GROQ_API_KEY=your_groq_api_key_here
    CHROMA_PERSIST_DIR=./chroma_db
    ```
 
